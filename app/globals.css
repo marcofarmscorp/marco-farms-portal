@@ -15,9 +15,6 @@
   --gray: #e5e7eb;
 
   --citrus: #f4b400;
-
-  /* Tipografía */
-  --font-sans: Arial, Helvetica, sans-serif;
 }
 
 @theme inline {
