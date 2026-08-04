@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-8 lg:h-24">
 
-        <a href="/" className="relative h-12 w-36 shrink-0 sm:h-14 sm:w-44">
+        <a href="/" className="relative h-14 w-40 shrink-0 sm:h-16 sm:w-48 lg:h-20 lg:w-60">
           <Image
             src="/logos/logo-primary.png"
             alt="Marco Farms"
