@@ -1,35 +1,51 @@
+import Container from "../ui/Container";
+
 export default function Hero() {
   return (
-    <section className="py-28 text-center bg-white">
+    <section className="bg-white pt-24 pb-20">
+      <Container>
+        <div className="mx-auto max-w-4xl text-center">
 
-      <p className="uppercase tracking-[6px] text-forest font-semibold">
-        Fresh Agricultural Products
-      </p>
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-forest">
+            Global Fresh Produce Supplier
+          </p>
 
-      <h2 className="text-6xl font-bold text-foreground mt-8 leading-tight">
-        Connecting Colombian Farms
-        <br />
-        with International Markets
-      </h2>
+          <h1 className="text-5xl font-bold leading-tight text-foreground md:text-7xl">
+            Supplying Fresh Produce
+            <br />
+            with Confidence.
+          </h1>
 
-      <p className="text-foreground/70 mt-10 max-w-2xl mx-auto text-xl">
-        Marco Farms supplies premium fresh agricultural products to
-        distributors, wholesalers, supermarkets and restaurants across
-        North America.
-      </p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-foreground/70">
+            Building reliable supply chains for importers, distributors,
+            retailers and food service companies through premium fresh produce
+            and trusted partnerships.
+          </p>
 
-      <div className="flex justify-center gap-6 mt-12">
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
 
-        <button className="bg-petroleum text-white px-10 py-4 rounded-full hover:opacity-90 transition">
-          Explore Products
-        </button>
+            <button className="rounded-full bg-petroleum px-8 py-4 font-medium text-white transition hover:opacity-90">
+              Explore Products
+            </button>
 
-        <button className="border border-forest text-forest px-10 py-4 rounded-full hover:bg-forest hover:text-white transition">
-          Request a Quote
-        </button>
+            <button className="rounded-full border border-forest px-8 py-4 font-medium text-forest transition hover:bg-forest hover:text-white">
+              Request a Quote
+            </button>
 
-      </div>
+          </div>
+s
+        </div>
 
+        <div className="mt-20 overflow-hidden rounded-3xl">
+
+          <img
+            src="/images/hero/hero-main.jpg"
+            alt="Fresh Produce"
+            className="h-[520px] w-full object-cover"
+          />
+
+        </div>
+      </Container>
     </section>
   );
 }
