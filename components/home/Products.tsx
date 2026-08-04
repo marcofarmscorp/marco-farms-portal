@@ -3,7 +3,9 @@ import Container from "../ui/Container";
 import { products } from "../../data/products";
 
 export default function Products() {
-  const yearRoundProducts = products.filter((product) => product.yearRound);
+  const yearRoundProducts = products.filter(
+    (product) => product.yearRound && product.image !== null
+  );
 
   return (
     <section className="bg-white py-24">
@@ -20,7 +22,7 @@ export default function Products() {
             >
               <div className="relative h-48 w-full">
                 <Image
-                  src={product.image}
+                  src={product.image!}
                   alt={product.name}
                   fill
                   className="object-cover"
