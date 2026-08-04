@@ -1,4 +1,5 @@
 import Container from "../ui/Container";
+import { contact } from "../../config/contact";
 
 export default function CTA() {
   return (
@@ -15,12 +16,23 @@ export default function CTA() {
             </p>
           </div>
 
-          <a
-            href="#contact"
-            className="whitespace-nowrap rounded-full bg-citrus px-8 py-4 font-medium text-forest-dark transition hover:opacity-90"
-          >
-            Talk to Us
-          </a>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <a
+              href={contact.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whitespace-nowrap rounded-full bg-citrus px-8 py-4 font-medium text-forest-dark transition hover:opacity-90"
+            >
+              Chat on WhatsApp
+            </a>
+
+            <a
+              href={contact.emailLink}
+              className="whitespace-nowrap rounded-full border border-white px-8 py-4 font-medium text-white transition hover:bg-white hover:text-forest"
+            >
+              Email Us
+            </a>
+          </div>
         </div>
       </Container>
     </section>

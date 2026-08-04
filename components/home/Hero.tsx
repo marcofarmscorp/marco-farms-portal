@@ -24,22 +24,28 @@ export default function Hero() {
 
           <div className="mt-12 flex flex-wrap justify-center gap-4">
 
-            <button className="rounded-full bg-petroleum px-8 py-4 font-medium text-white transition hover:opacity-90">
+            <a
+              href="/products"
+              className="rounded-full bg-petroleum px-8 py-4 font-medium text-white transition hover:opacity-90"
+            >
               Explore Products
-            </button>
+            </a>
 
-            <button className="rounded-full border border-forest px-8 py-4 font-medium text-forest transition hover:bg-forest hover:text-white">
+            <a
+              href="/contact"
+              className="rounded-full border border-forest px-8 py-4 font-medium text-forest transition hover:bg-forest hover:text-white"
+            >
               Request a Quote
-            </button>
+            </a>
 
           </div>
-s
+
         </div>
 
         <div className="mt-20 overflow-hidden rounded-3xl">
 
           <img
-            src="/images/hero/hero-main.jpg"
+            src="/Images/hero/hero-main.jpg"
             alt="Fresh Produce"
             className="h-[520px] w-full object-cover"
           />
