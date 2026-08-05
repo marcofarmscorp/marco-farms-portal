@@ -10,7 +10,17 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-gray bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-8 lg:h-28">
 
-        <a href="/" className="relative h-16 w-48 shrink-0 sm:h-20 sm:w-60 lg:h-24 lg:w-80">
+        <a href="/" className="relative h-20 w-20 shrink-0 lg:hidden">
+          <Image
+            src="/logos/logo-stacked.png"
+            alt="Marco Farms"
+            fill
+            className="object-contain"
+            priority
+          />
+        </a>
+
+        <a href="/" className="relative hidden shrink-0 lg:block lg:h-24 lg:w-80">
           <Image
             src="/logos/logo-primary.png"
             alt="Marco Farms"
