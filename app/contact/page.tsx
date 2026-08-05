@@ -1,9 +1,47 @@
+"use client";
+
+import { useState } from "react";
 import Header from "../../components/layout/Header";
 import Footer from "../../components/home/Footer";
 import Container from "../../components/ui/Container";
 import { contact } from "../../config/contact";
 
+type Status = "idle" | "sending" | "success" | "error";
+
 export default function ContactPage() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.append(
+      "access_key",
+      process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string
+    );
+    formData.append("subject", "New Quote Request - Marco Farms website");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <>
       <Header />
@@ -38,8 +76,7 @@ export default function ContactPage() {
           </div>
 
           <form
-            action={contact.emailLink}
-            method="get"
+            onSubmit={handleSubmit}
             className="mx-auto mt-14 max-w-2xl space-y-5 rounded-2xl border border-gray bg-white p-8"
           >
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -105,10 +142,24 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="w-full rounded-full bg-petroleum py-3 text-sm font-medium text-white transition hover:opacity-90"
+              disabled={status === "sending"}
+              className="w-full rounded-full bg-petroleum py-3 text-sm font-medium text-white transition hover:opacity-90 disabled:opacity-50"
             >
-              Send Request
+              {status === "sending" ? "Sending..." : "Send Request"}
             </button>
+
+            {status === "success" && (
+              <p className="text-center text-sm font-medium text-forest">
+                Thanks — your request was sent. We&apos;ll be in touch soon.
+              </p>
+            )}
+
+            {status === "error" && (
+              <p className="text-center text-sm font-medium text-red-600">
+                Something went wrong. Please try WhatsApp or email us
+                directly.
+              </p>
+            )}
           </form>
         </Container>
       </section>
