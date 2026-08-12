@@ -1,74 +1,124 @@
 export interface Product {
   id: string;
   name: string;
-  image: string | null;
+  images: string[];
   description: string;
   yearRound: boolean;
   available: boolean;
 }
- 
+
 export const products: Product[] = [
   {
     id: "tahiti-lime",
     name: "Tahiti Lime",
-    image: "/Images/products/tahiti-lime.jpg",
-    description: "Bright, juicy limes with a long shelf life for export.",
+    images: [
+  "/Images/products/tahiti-lime.jpeg",
+  "/Images/products/tahiti-lime-2.jpeg",
+  "/Images/products/tahiti-lime-3.jpeg",
+  "/Images/products/tahiti-lime-4.jpeg",
+    ],
+    description:
+      "Bright, juicy limes with a long shelf life for export.",
     yearRound: true,
     available: true,
   },
+
   {
     id: "mandarin",
     name: "Mandarin",
-    image: "/Images/products/mandarin.jpg",
-    description: "Sweet, easy-peel mandarins graded for wholesale.",
+    images: [
+      "/Images/products/mandarin.jpg",
+      "/Images/products/mandarin-2.jpeg",
+      "/Images/products/mandarin-3.jpeg",
+      "/Images/products/mandarin-4.jpeg",
+    ],
+    description:
+      "Sweet, easy-peel mandarins graded for wholesale.",
     yearRound: true,
     available: true,
   },
+
   {
     id: "mango",
     name: "Mango",
-    image: "/Images/products/mango.jpg",
-    description: "Premium mangoes selected for consistent size and color.",
+    images: [
+      "/Images/products/mango.jpg",
+      "/Images/products/mango-2.jpg",
+      "/Images/products/mango-3.jpg",
+    ],
+    description:
+      "Premium mangoes selected for consistent size and color.",
     yearRound: true,
     available: true,
   },
+
   {
     id: "culantro",
     name: "Culantro",
-    image: "/Images/products/culantro.jpg",
-    description: "Fresh culantro, harvested and packed for freshness.",
+    images: [
+      "/Images/products/culantro.jpg",
+      "/Images/products/culantro-2.jpeg",
+      "/Images/products/culantro-3.jpeg",
+      "/Images/products/culantro-4.jpeg",
+      "/Images/products/culantro-5.jpeg",
+    ],
+    description:
+      "Fresh culantro, harvested and packed for freshness.",
     yearRound: true,
     available: true,
   },
+
+  {
+    id: "cana",
+    name: "Sugarcane",
+    images: [
+      "/Images/products/cana.jpeg",
+      "/Images/products/cana-2.jpeg",
+      "/Images/products/cana-3.jpeg",
+      "/Images/products/cana-4.jpeg",
+    ],
+    description:
+      "Fresh sugarcane with a crisp texture and naturally sweet flavor.",
+    yearRound: true,
+    available: true,
+  },
+
   {
     id: "mamey-zapote",
     name: "Mamey Zapote",
-    image: null,
-    description: "Sweet, creamy tropical fruit with rich flavor and vibrant orange flesh.",
+    images: [],
+    description:
+      "Sweet, creamy tropical fruit with rich flavor and vibrant orange flesh.",
     yearRound: false,
     available: false,
   },
+
   {
     id: "thai-guava",
     name: "Thai Guava",
-    image: null,
-    description: "Crisp white-fleshed guava with a refreshing taste and excellent shelf life.",
+    images: [],
+    description:
+      "Crisp white-fleshed guava with a refreshing taste and excellent shelf life.",
     yearRound: false,
     available: false,
   },
+
   {
     id: "pink-guava",
     name: "Pink Guava",
-    image: null,
-    description: "Aromatic pink-fleshed guava with natural sweetness and tropical flavor.",
+    images: [],
+    description:
+      "Aromatic pink-fleshed guava with natural sweetness and tropical flavor.",
     yearRound: false,
     available: false,
   },
+
   {
     id: "green-plantain-ec",
     name: "Green Plantain EC",
-    image: null,
-    description: "Premium green plantain, ideal for cooking, frying, and international markets.",
+    images: [],
+    description:
+      "Premium green plantain, ideal for cooking, frying, and international markets.",
     yearRound: false,
     available: false,
   },
