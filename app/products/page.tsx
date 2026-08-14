@@ -83,7 +83,9 @@ export default function ProductsPage() {
                     key={product.id}
                     className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]"
                   >
-                    <div className="overflow-hidden rounded-2xl border border-gray bg-white transition duration-300 hover:shadow-md">
+                    <div
+                    className="group relative overflow-visible rounded-2xl border border-gray bg-white transition duration-300 hover:shadow-md"
+                    >
                       <div className="relative">
                         <ProductCarousel
                           images={product.images}

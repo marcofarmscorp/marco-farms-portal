@@ -86,7 +86,10 @@ export const products: Product[] = [
   {
     id: "mamey-zapote",
     name: "Mamey Zapote",
-    images: [],
+    images: [
+    "/Images/products/mamey.jpeg"
+    "/Images/products/mamey-2.jpeg"   
+    ],
     description:
       "Sweet, creamy tropical fruit with rich flavor and vibrant orange flesh.",
     yearRound: false,
@@ -96,7 +99,11 @@ export const products: Product[] = [
   {
     id: "thai-guava",
     name: "Thai Guava",
-    images: [],
+    images: [
+    "/Images/products/Tguava.jpeg"
+    "/Images/products/Tguava-2.jpeg"
+    "/Images/products/Tguava-3.jpeg"  
+    ],
     description:
       "Crisp white-fleshed guava with a refreshing taste and excellent shelf life.",
     yearRound: false,
@@ -106,7 +113,11 @@ export const products: Product[] = [
   {
     id: "pink-guava",
     name: "Pink Guava",
-    images: [],
+    images: [
+    "/Images/products/Pguava.jpeg"
+    "/Images/products/Pguava-2.jpeg"
+    "/Images/products/Pguava-3.jpeg"  
+    ],
     description:
       "Aromatic pink-fleshed guava with natural sweetness and tropical flavor.",
     yearRound: false,
@@ -116,7 +127,13 @@ export const products: Product[] = [
   {
     id: "green-plantain-ec",
     name: "Green Plantain EC",
-    images: [],
+    images: [
+    "/Images/products/Gplantain.jpeg"
+    "/Images/products/Gplantain-2.jpeg"
+    "/Images/products/Gplantain-3.jpeg"
+    "/Images/products/Gplantain-4.jpeg" 
+    "/Images/products/Gplantain-5.jpeg" 
+    ],
     description:
       "Premium green plantain, ideal for cooking, frying, and international markets.",
     yearRound: false,
