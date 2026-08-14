@@ -44,8 +44,7 @@ export const products: Product[] = [
     images: [
       "/Images/products/mango.jpg",
       "/Images/products/mango-2.jpg",
-      "/Images/products/mango-3.jpg",
-    ],
+          ],
     description:
       "Premium mangoes selected for consistent size and color.",
     yearRound: true,
