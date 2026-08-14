@@ -92,7 +92,7 @@ export const products: Product[] = [
     ],
     description:
       "Sweet, creamy tropical fruit with rich flavor and vibrant orange flesh.",
-    yearRound: true,
+    yearRound: false,
     available: true,
   },
 
@@ -106,7 +106,7 @@ export const products: Product[] = [
     ],
     description:
       "Crisp white-fleshed guava with a refreshing taste and excellent shelf life.",
-    yearRound: true,
+    yearRound: false,
     available: true,
   },
 
@@ -120,7 +120,7 @@ export const products: Product[] = [
     ],
     description:
       "Aromatic pink-fleshed guava with natural sweetness and tropical flavor.",
-    yearRound: true,
+    yearRound: false,
     available: true,
   },
 
@@ -136,7 +136,7 @@ export const products: Product[] = [
     ],
     description:
       "Premium green plantain, ideal for cooking, frying, and international markets.",
-    yearRound: true,
+    yearRound: false,
     available: true,
   },
 ];
