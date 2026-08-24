@@ -169,4 +169,3 @@ export const products: Product[] = [
     exotic: true,
   },
 ];
-];
