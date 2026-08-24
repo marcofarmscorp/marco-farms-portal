@@ -146,6 +146,8 @@ export const products: Product[] = [
       "/Images/products/guanabana.jpeg",
       "/Images/products/guanabana-2.jpeg",
       "/Images/products/guanabana-3.jpeg",
+      "/Images/products/guanabana-4.png",
+      "/Images/products/guanabana-5.png",
     ],
     description:
       "Exotic soursop with soft white pulp, prized for its sweet-tart tropical flavor.",
