@@ -1,6 +1,7 @@
 import Header from "../components/layout/Header";
 import Hero from "../components/home/Hero";
 import Products from "../components/home/Products";
+import ExoticFruits from "../components/home/ExoticFruits";
 import WhyMarco from "../components/home/WhyMarco";
 import Markets from "../components/home/Markets";
 import CTA from "../components/home/CTA";
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Products />
+      <ExoticFruits />
       <WhyMarco />
       <Markets />
       <CTA />
