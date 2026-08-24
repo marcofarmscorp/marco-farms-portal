@@ -5,6 +5,7 @@ export interface Product {
   description: string;
   yearRound: boolean;
   available: boolean;
+  exotic?: boolean;
 }
 
 export const products: Product[] = [
@@ -138,4 +139,34 @@ export const products: Product[] = [
     yearRound: false,
     available: true,
   },
+    {
+    id: "guanabana",
+    name: "Guanabana",
+    images: [
+      "/Images/products/guanabana.jpeg",
+      "/Images/products/guanabana-2.jpeg",
+      "/Images/products/guanabana-3.jpeg",
+    ],
+    description:
+      "Exotic soursop with soft white pulp, prized for its sweet-tart tropical flavor.",
+    yearRound: false,
+    available: true,
+    exotic: true,
+  },
+
+  {
+    id: "rambutan",
+    name: "Rambutan",
+    images: [
+      "/Images/products/rambutan.jpeg",
+      "/Images/products/rambutan-2.jpeg",
+      "/Images/products/rambutan-3.jpeg",
+    ],
+    description:
+      "Vibrant, hairy-skinned tropical fruit with juicy, translucent sweet flesh.",
+    yearRound: false,
+    available: true,
+    exotic: true,
+  },
+];
 ];
