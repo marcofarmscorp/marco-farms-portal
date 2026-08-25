@@ -13,7 +13,7 @@ export default function Header() {
         <a href="/" className="relative h-20 w-20 shrink-0 lg:hidden">
           <Image
             src="/logos/logo-stacked.png"
-            alt="Marco Farms"
+            alt="Marco Farms Corp"
             fill
             className="object-contain"
             priority
@@ -23,7 +23,7 @@ export default function Header() {
         <a href="/" className="relative hidden shrink-0 lg:block lg:h-24 lg:w-80">
           <Image
             src="/logos/logo-primary.png"
-            alt="Marco Farms"
+            alt="Marco Farms Corp"
             fill
             className="object-contain"
             priority
