@@ -3,7 +3,7 @@ import { markets } from "../../data/markets";
 
 export default function Markets() {
   return (
-    <section className="bg-light py-24">
+    <section className="bg-white py-24">
       <Container>
         <h2 className="text-center text-3xl font-bold text-foreground md:text-4xl">
           Markets We Serve
