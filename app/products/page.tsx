@@ -30,25 +30,36 @@ export default function ProductsPage() {
     <>
       <Header />
 
-      <section className="bg-white py-24">
-        <Container>
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-forest py-20 sm:py-24">
+        <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-citrus/10 blur-3xl" />
+        <div className="absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-petroleum/20 blur-3xl" />
 
-          {/* Page Header */}
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-foreground md:text-4xl">
+        <Container>
+          <div className="relative mx-auto max-w-2xl text-center">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-citrus">
+              Our Catalog
+            </p>
+
+            <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               Our Products
             </h1>
 
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-foreground/60">
+            <p className="mt-5 text-base leading-7 text-white/75">
               A full view of what we grow and source, including items
               available year-round and seasonal produce.
             </p>
           </div>
+        </Container>
+      </section>
+
+      <section className="bg-white py-24">
+        <Container>
 
           {/* =========================================
               AVAILABLE YEAR-ROUND
           ========================================= */}
-          <div className="mt-16">
+          <div>
             <h2 className="text-center text-2xl font-semibold text-foreground">
               Available Year-Round
             </h2>
