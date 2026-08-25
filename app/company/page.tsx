@@ -78,7 +78,7 @@ export default function CompanyPage() {
                 <div className="mt-9 flex flex-wrap gap-4">
                   <Link
                     href="/products"
-                    className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#123B2A] transition hover:bg-[#F3F4F1]"
+                    className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-forest transition hover:bg-light"
                   >
                     Explore Our Products
                   </Link>
@@ -94,10 +94,10 @@ export default function CompanyPage() {
 
               <div className="relative hidden lg:block">
                 <div className="relative mx-auto max-w-[520px]">
-                  <div className="absolute -inset-5 rounded-[2.5rem] bg-[#D9A441]/10 blur-2xl" />
+                  <div className="absolute -inset-5 rounded-[2.5rem] bg-citrus/10 blur-2xl" />
 
                   <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
-                    <div className="flex aspect-[4/5] items-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#315C43] via-[#214D38] to-[#102F24] p-8">
+                    <div className="flex aspect-[4/5] items-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-forest via-forest to-forest-dark p-8">
                       <div>
                         <div className="mb-4 h-1 w-14 rounded-full bg-citrus" />
 
@@ -170,7 +170,7 @@ export default function CompanyPage() {
         <section className="bg-white py-20 sm:py-24">
           <Container>
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1E5960]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-petroleum">
                 What We Do
               </p>
 
@@ -189,7 +189,7 @@ export default function CompanyPage() {
               {services.map((service, index) => (
                 <article
                   key={service.title}
-                  className="group rounded-3xl border border-slate-200 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-[#1E5960]/30 hover:shadow-xl"
+                  className="group rounded-3xl border border-slate-200 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-petroleum/30 hover:shadow-xl"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-full bg-forest text-sm font-semibold text-white">
                     {String(index + 1).padStart(2, "0")}
@@ -209,7 +209,7 @@ export default function CompanyPage() {
         </section>
 
         {/* WHO WE SERVE */}
-        <section className="text-forest py-20 sm:py-24">
+        <section className="bg-forest py-20 sm:py-24">
           <Container>
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div>
@@ -250,7 +250,7 @@ export default function CompanyPage() {
         </section>
 
         {/* OUR APPROACH */}
-        <section className="bg-[#F5F6F3] py-20 sm:py-24">
+        <section className="bg-light py-20 sm:py-24">
           <Container>
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-petroleum">
@@ -277,7 +277,7 @@ export default function CompanyPage() {
                     {pillar.number}
                   </span>
 
-                  <h3 className="mt-5 text-2xl font-semibold bg-forest">
+                  <h3 className="mt-5 text-2xl font-semibold text-forest">
                     {pillar.title}
                   </h3>
 
@@ -285,7 +285,7 @@ export default function CompanyPage() {
                     {pillar.text}
                   </p>
 
-                  <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#123B2A]/5" />
+                  <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-forest/5" />
                 </article>
               ))}
             </div>
@@ -314,7 +314,7 @@ export default function CompanyPage() {
 
                   <Link
                     href="/products"
-                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1D4D38]"
+                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-forest-dark"
                   >
                     View Products
                     <span aria-hidden="true">→</span>
@@ -322,8 +322,8 @@ export default function CompanyPage() {
                 </div>
 
                 <div className="relative min-h-[280px] overflow-hidden bg-petroleum">
-                  <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#D9A441]/20" />
-                  <div className="absolute -bottom-20 -left-16 h-72 w-72 rounded-full bg-[#123B2A]/30" />
+                  <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-citrus/20" />
+                  <div className="absolute -bottom-20 -left-16 h-72 w-72 rounded-full bg-forest/30" />
 
                   <div className="relative flex h-full items-center justify-center p-10">
                     <div className="text-center">
@@ -367,7 +367,7 @@ export default function CompanyPage() {
 
                 <Link
                   href="/contact"
-                  className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#123B2A] transition hover:bg-[#F3F4F1]"
+                  className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-forest transition hover:bg-light"
                 >
                   Contact Marcos Farm
                 </Link>
