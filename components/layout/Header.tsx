@@ -34,7 +34,7 @@ export default function Header() {
           <a className="transition hover:text-forest" href="/">
             Home
           </a>
-          <a className="transition hover:text-forest" href="#">
+          <a className="transition hover:text-forest" href="/company">
             Company
           </a>
           <a className="transition hover:text-forest" href="/products">
@@ -87,7 +87,7 @@ export default function Header() {
             Home
           </a>
           <a
-            href="#"
+            href="/company"
             className="rounded-lg px-3 py-3 text-sm font-medium transition hover:bg-light"
           >
             Company
