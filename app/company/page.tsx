@@ -51,20 +51,20 @@ export default function CompanyPage() {
 
       <main className="bg-white text-slate-900">
         {/* HERO */}
-        <section className="relative overflow-hidden bg-[#123B2A]">
-          <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#D9A441]/10 blur-3xl" />
-          <div className="absolute -bottom-40 -left-20 h-96 w-96 rounded-full bg-[#1E5960]/20 blur-3xl" />
+        <section className="relative overflow-hidden bg-forest">
+          <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-citrus/10 blur-3xl" />
+          <div className="absolute -bottom-40 -left-20 h-96 w-96 rounded-full bg-petroleum/20 blur-3xl" />
 
           <Container>
             <div className="relative grid min-h-[620px] items-center gap-12 py-20 lg:grid-cols-2 lg:py-24">
               <div className="max-w-2xl">
-                <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-[#D9A441]">
+                <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-citrus">
                   About Marcos Farm Corp
                 </p>
 
                 <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
                   Fresh produce,
-                  <span className="block text-[#E5C76B]">
+                  <span className="block text-citrus">
                     built around trust.
                   </span>
                 </h1>
@@ -99,7 +99,7 @@ export default function CompanyPage() {
                   <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
                     <div className="flex aspect-[4/5] items-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#315C43] via-[#214D38] to-[#102F24] p-8">
                       <div>
-                        <div className="mb-4 h-1 w-14 rounded-full bg-[#D9A441]" />
+                        <div className="mb-4 h-1 w-14 rounded-full bg-citrus" />
 
                         <p className="max-w-sm text-2xl font-medium leading-snug text-white">
                           Supplying Fresh Produce with Confidence.
@@ -118,7 +118,7 @@ export default function CompanyPage() {
                       Marcos Farm
                     </p>
 
-                    <p className="mt-1 text-sm font-semibold text-[#123B2A]">
+                    <p className="mt-1 text-sm font-semibold text-forest">
                       Fresh Produce Supplier
                     </p>
                   </div>
@@ -129,15 +129,15 @@ export default function CompanyPage() {
         </section>
 
         {/* WHO WE ARE */}
-        <section className="bg-[#F5F6F3] py-20 sm:py-24">
+        <section className="bg-light py-20 sm:py-24">
           <Container>
             <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1E5960]">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-petroleum">
                   Who We Are
                 </p>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#123B2A] sm:text-4xl">
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-forest sm:text-4xl">
                   Connecting fresh produce with the businesses that need it.
                 </h2>
               </div>
@@ -174,7 +174,7 @@ export default function CompanyPage() {
                 What We Do
               </p>
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#123B2A] sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-petroleum sm:text-4xl">
                 A practical approach to fresh produce supply.
               </h2>
 
@@ -191,11 +191,11 @@ export default function CompanyPage() {
                   key={service.title}
                   className="group rounded-3xl border border-slate-200 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-[#1E5960]/30 hover:shadow-xl"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#123B2A] text-sm font-semibold text-white">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-forest text-sm font-semibold text-white">
                     {String(index + 1).padStart(2, "0")}
                   </div>
 
-                  <h3 className="mt-7 text-xl font-semibold text-[#123B2A]">
+                  <h3 className="mt-7 text-xl font-semibold text-forest">
                     {service.title}
                   </h3>
 
@@ -209,11 +209,11 @@ export default function CompanyPage() {
         </section>
 
         {/* WHO WE SERVE */}
-        <section className="bg-[#123B2A] py-20 sm:py-24">
+        <section className="text-forest py-20 sm:py-24">
           <Container>
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#D9A441]">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-citrus">
                   Who We Serve
                 </p>
 
@@ -235,7 +235,7 @@ export default function CompanyPage() {
                     key={customer}
                     className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-5 transition hover:bg-white/10"
                   >
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#D9A441] text-sm font-bold text-[#123B2A]">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-citrus text-sm font-bold text-forest">
                       ✓
                     </span>
 
@@ -253,11 +253,11 @@ export default function CompanyPage() {
         <section className="bg-[#F5F6F3] py-20 sm:py-24">
           <Container>
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1E5960]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-petroleum">
                 Our Approach
               </p>
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#123B2A] sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-forest sm:text-4xl">
                 Relationships matter as much as the product.
               </h2>
 
@@ -273,11 +273,11 @@ export default function CompanyPage() {
                   key={pillar.number}
                   className="relative overflow-hidden rounded-3xl bg-white p-8 shadow-sm"
                 >
-                  <span className="text-sm font-bold tracking-widest text-[#D9A441]">
+                  <span className="text-sm font-bold tracking-widest text-citrus">
                     {pillar.number}
                   </span>
 
-                  <h3 className="mt-5 text-2xl font-semibold text-[#123B2A]">
+                  <h3 className="mt-5 text-2xl font-semibold bg-forest">
                     {pillar.title}
                   </h3>
 
@@ -295,14 +295,14 @@ export default function CompanyPage() {
         {/* PRODUCTS CONNECTION */}
         <section className="bg-white py-20 sm:py-24">
           <Container>
-            <div className="overflow-hidden rounded-[2rem] bg-[#EEF1ED]">
+            <div className="overflow-hidden rounded-[2rem] bg-light">
               <div className="grid lg:grid-cols-[1.15fr_0.85fr]">
                 <div className="p-8 sm:p-12 lg:p-16">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1E5960]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-petroleum">
                     Our Produce
                   </p>
 
-                  <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#123B2A] sm:text-4xl">
+                  <h2 className="mt-4 text-3xl font-semibold tracking-tight text-forest sm:text-4xl">
                     Explore our fresh produce selection.
                   </h2>
 
@@ -314,14 +314,14 @@ export default function CompanyPage() {
 
                   <Link
                     href="/products"
-                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#123B2A] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1D4D38]"
+                    className="mt-8 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1D4D38]"
                   >
                     View Products
                     <span aria-hidden="true">→</span>
                   </Link>
                 </div>
 
-                <div className="relative min-h-[280px] overflow-hidden bg-[#1E5960]">
+                <div className="relative min-h-[280px] overflow-hidden bg-petroleum">
                   <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#D9A441]/20" />
                   <div className="absolute -bottom-20 -left-16 h-72 w-72 rounded-full bg-[#123B2A]/30" />
 
@@ -335,7 +335,7 @@ export default function CompanyPage() {
                         Produce
                       </p>
 
-                      <div className="mx-auto mt-6 h-1 w-12 rounded-full bg-[#D9A441]" />
+                      <div className="mx-auto mt-6 h-1 w-12 rounded-full bg-citrus" />
                     </div>
                   </div>
                 </div>
@@ -347,12 +347,12 @@ export default function CompanyPage() {
         {/* CTA */}
         <section className="bg-white pb-24">
           <Container>
-            <div className="relative overflow-hidden rounded-[2rem] bg-[#123B2A] px-8 py-14 text-center sm:px-12 sm:py-16">
+            <div className="relative overflow-hidden rounded-[2rem] bg-forest px-8 py-14 text-center sm:px-12 sm:py-16">
               <div className="absolute -left-20 -top-20 h-48 w-48 rounded-full bg-white/5" />
-              <div className="absolute -bottom-24 -right-10 h-56 w-56 rounded-full bg-[#D9A441]/10" />
+              <div className="absolute -bottom-24 -right-10 h-56 w-56 rounded-full bg-citrus/10" />
 
               <div className="relative mx-auto max-w-2xl">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#D9A441]">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-citrus">
                   Let&apos;s Work Together
                 </p>
 
