@@ -21,7 +21,7 @@ export default function ContactPage() {
       "access_key",
       process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string
     );
-    formData.append("subject", "New Quote Request - Marco Farms website");
+    formData.append("subject", "New Quote Request - Marco Farms Corp website");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
