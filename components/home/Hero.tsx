@@ -2,9 +2,12 @@ import Container from "../ui/Container";
 
 export default function Hero() {
   return (
-    <section className="bg-white pt-24 pb-20">
+    <section className="relative overflow-hidden bg-white pt-24 pb-20">
+      <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-citrus/10 blur-3xl" />
+      <div className="absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-petroleum/10 blur-3xl" />
+
       <Container>
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="relative mx-auto max-w-4xl text-center">
 
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-forest">
             Global Fresh Produce Supplier
@@ -42,7 +45,7 @@ export default function Hero() {
 
         </div>
 
-        <div className="mt-20 overflow-hidden rounded-3xl">
+        <div className="relative mt-20 overflow-hidden rounded-3xl">
 
           <img
             src="/Images/hero/hero-main.jpg"
