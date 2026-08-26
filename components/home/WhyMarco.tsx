@@ -1,6 +1,6 @@
 import { ShieldCheck, MessageCircle, Clock, Users, ClipboardCheck } from "lucide-react";
 import Container from "../ui/Container";
-import { whyMarcoPillars } from "../../data/whyMarco";
+import { whyMarcoPillars } from "../../data/whyMarcosFarmCorp";
 
 const icons = {
   ShieldCheck,
