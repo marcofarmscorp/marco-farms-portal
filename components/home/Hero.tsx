@@ -1,11 +1,9 @@
-```tsx
-import Container from "../ui/Container";
+import Container from "@/components/ui/Container";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white pt-24 pb-20">
-      <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-citrus/10 blur-3xl" />
-      <div className="absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-petroleum/10 blur-3xl" />
+      <div className="absolute -right-40 -top-40 h-96 w-96 rounded-3xl bg-citrus/10 blur-3xl" />
 
       <Container>
         <div className="relative mx-auto max-w-4xl text-center">
@@ -58,5 +56,3 @@ export default function Hero() {
     </section>
   );
 }
-```
-
