@@ -1,3 +1,4 @@
+```tsx
 import Container from "../ui/Container";
 
 export default function Hero() {
@@ -52,7 +53,11 @@ export default function Hero() {
             playsInline
             preload="metadata"
           >
-            <source src="/videos/limes-hero.mp4" type="video/mp4" />
+            <source
+              src="/videos/limes-hero.mp4"
+              type="video/mp4"
+            />
+
             Your browser does not support the video tag.
           </video>
         </div>
@@ -60,3 +65,4 @@ export default function Hero() {
     </section>
   );
 }
+```
