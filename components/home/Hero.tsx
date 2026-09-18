@@ -9,7 +9,6 @@ export default function Hero() {
 
       <Container>
         <div className="relative mx-auto max-w-4xl text-center">
-
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-forest">
             Global Fresh Produce Supplier
           </p>
@@ -43,7 +42,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* LIME VIDEO */}
         <div className="relative mt-20 overflow-hidden rounded-3xl">
           <video
             className="h-[520px] w-full object-cover"
@@ -51,14 +49,9 @@ export default function Hero() {
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
           >
-            <source
-              src="/videos/limes-hero.mp4"
-              type="video/mp4"
-            />
-
-            Your browser does not support the video tag.
+            <source src="/videos/limes-hero.mp4" type="video/mp4" />
           </video>
         </div>
       </Container>
@@ -66,3 +59,4 @@ export default function Hero() {
   );
 }
 ```
+
