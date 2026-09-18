@@ -26,7 +26,6 @@ export default function Hero() {
           </p>
 
           <div className="mt-12 flex flex-wrap justify-center gap-4">
-
             <a
               href="/products"
               className="rounded-full bg-petroleum px-8 py-4 font-medium text-white transition hover:opacity-90"
@@ -40,19 +39,22 @@ export default function Hero() {
             >
               Request a Quote
             </a>
-
           </div>
-
         </div>
 
+        {/* LIME VIDEO */}
         <div className="relative mt-20 overflow-hidden rounded-3xl">
-
-          <img
-            src="/Images/hero/hero-main.jpg"
-            alt="Fresh Produce"
+          <video
             className="h-[520px] w-full object-cover"
-          />
-
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          >
+            <source src="/videos/limes-hero.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </Container>
     </section>
