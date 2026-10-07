@@ -1,117 +1,68 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="sticky top-0 z-50 border-b border-gray bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-8 lg:h-28">
-
-        <a href="/" className="relative h-20 w-20 shrink-0 lg:hidden">
-          <Image
-            src="/logos/logo-stacked.png"
-            alt="Marco Farms Corp"
-            fill
-            className="object-contain"
-            priority
-          />
-        </a>
-
-        <a href="/" className="relative hidden shrink-0 lg:block lg:h-24 lg:w-80">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#e6ebe9]/80 bg-white/90 backdrop-blur-xl">
+      <div className="mx-auto flex h-[76px] max-w-[1280px] items-center justify-between px-5 lg:px-8">
+        
+        {/* ORIGINAL MARCO FARMS LOGO */}
+        <Link
+          href="/"
+          className="relative flex items-center"
+          aria-label="Marco Farms Corp"
+        >
           <Image
             src="/logos/logo-primary.png"
             alt="Marco Farms Corp"
-            fill
-            className="object-contain"
+            width={180}
+            height={55}
             priority
+            className="h-auto w-[145px] object-contain sm:w-[165px]"
           />
-        </a>
+        </Link>
 
-        <nav className="hidden items-center gap-10 lg:flex">
-          <a className="transition hover:text-forest" href="/">
-            Home
-          </a>
-          <a className="transition hover:text-forest" href="/company">
-            Company
-          </a>
-          <a className="transition hover:text-forest" href="/products">
-            Products
-          </a>
-          <a className="transition hover:text-forest" href="/contact">
-            Contact
-          </a>
-        </nav>
-
-        <a
-          href="/contact"
-          className="hidden rounded-full bg-petroleum px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 lg:inline-block"
-        >
-          Contact Sales
-        </a>
-
-        <button
-          type="button"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-          className="flex h-10 w-10 items-center justify-center rounded-md lg:hidden"
-        >
-          <div className="flex flex-col gap-1.5">
-            <span
-              className={`block h-0.5 w-6 bg-foreground transition ${
-                menuOpen ? "translate-y-2 rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-foreground transition ${
-                menuOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-foreground transition ${
-                menuOpen ? "-translate-y-2 -rotate-45" : ""
-              }`}
-            />
-          </div>
-        </button>
-      </div>
-
-      {menuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-gray bg-white px-4 py-4 lg:hidden">
-          <a
-            href="/"
-            className="rounded-lg px-3 py-3 text-sm font-medium transition hover:bg-light"
-          >
-            Home
-          </a>
-          <a
-            href="/company"
-            className="rounded-lg px-3 py-3 text-sm font-medium transition hover:bg-light"
-          >
-            Company
-          </a>
-          <a
+        {/* DESKTOP NAVIGATION */}
+        <nav className="hidden items-center gap-8 lg:flex">
+          <Link
             href="/products"
-            className="rounded-lg px-3 py-3 text-sm font-medium transition hover:bg-light"
+            className="text-[14px] font-medium text-[#526861] transition hover:text-[#0E3B2E]"
           >
             Products
-          </a>
-          <a
-            href="/contact"
-            className="rounded-lg px-3 py-3 text-sm font-medium transition hover:bg-light"
+          </Link>
+
+          <Link
+            href="/company"
+            className="text-[14px] font-medium text-[#526861] transition hover:text-[#0E3B2E]"
+          >
+            Company
+          </Link>
+
+          <Link
+            href="/#promise"
+            className="text-[14px] font-medium text-[#526861] transition hover:text-[#0E3B2E]"
+          >
+            Our Promise
+          </Link>
+
+          <Link
+            href="/#contact"
+            className="text-[14px] font-medium text-[#526861] transition hover:text-[#0E3B2E]"
           >
             Contact
-          </a>
-          <a
-            href="/contact"
-            className="mt-2 rounded-full bg-petroleum px-6 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
-          >
-            Contact Sales
-          </a>
+          </Link>
         </nav>
-      )}
+
+        {/* CTA */}
+        <Link
+          href="/#contact"
+          className="rounded-full bg-[#FFD23F] px-5 py-3 text-[13px] font-bold text-[#0E3B2E] transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#FFD23F]/30"
+        >
+          Request a Quote
+        </Link>
+      </div>
     </header>
   );
 }
