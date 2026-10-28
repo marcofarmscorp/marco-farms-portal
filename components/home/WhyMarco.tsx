@@ -20,10 +20,9 @@ ClipboardCheck,
 };
 
 const spanishTranslations: Record<
-string,
-{ title: string; description: string }
-
-= {
+  string,
+  { title: string; description: string }
+> = {
 "Quality Assurance": {
 title: "Garantía de calidad",
 description:
