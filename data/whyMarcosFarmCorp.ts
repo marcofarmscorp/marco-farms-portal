@@ -1,27 +1,32 @@
-export const whyMarcoPillars = [
-  {
-    icon: "ShieldCheck",
-    title: "Reliability",
-    description: "We deliver on what we promise, every time.",
+
+const spanishTranslations: Record<
+  string,
+  { title: string; description: string }
+> = {
+  Reliability: {
+    title: "Confiabilidad",
+    description: "Cumplimos lo que prometemos, siempre.",
   },
-  {
-    icon: "MessageCircle",
-    title: "Transparency",
-    description: "Clear and honest communication at every step.",
+  Transparency: {
+    title: "Transparencia",
+    description: "Comunicación clara y honesta en cada etapa.",
   },
-  {
-    icon: "Clock",
-    title: "Speed",
-    description: "Timely responses and on-time deliveries.",
+  Speed: {
+    title: "Rapidez",
+    description: "Respuestas oportunas y entregas a tiempo.",
   },
-  {
-    icon: "Users",
-    title: "Relationships",
-    description: "We build long-term partnerships, not one-time sales.",
+  Relationships: {
+    title: "Relaciones comerciales",
+    description:
+      "Construimos alianzas a largo plazo, no ventas de una sola vez.",
   },
-  {
-    icon: "ClipboardCheck",
-    title: "Compliance",
+  Compliance: {
+    title: "Cumplimiento",
+    description:
+      "Nuestra palabra es nuestro compromiso más importante.",
+  },
+};
+
     description: "Our word is our most important commitment.",
   },
 ];
