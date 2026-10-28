@@ -1,32 +1,28 @@
 
-const spanishTranslations: Record<
-  string,
-  { title: string; description: string }
-> = {
-  Reliability: {
-    title: "Confiabilidad",
-    description: "Cumplimos lo que prometemos, siempre.",
+export const whyMarcoPillars = [
+  {
+    icon: "ShieldCheck",
+    title: "Reliability",
+    description: "We deliver on what we promise, every time.",
   },
-  Transparency: {
-    title: "Transparencia",
-    description: "Comunicación clara y honesta en cada etapa.",
+  {
+    icon: "MessageCircle",
+    title: "Transparency",
+    description: "Clear and honest communication at every step.",
   },
-  Speed: {
-    title: "Rapidez",
-    description: "Respuestas oportunas y entregas a tiempo.",
+  {
+    icon: "Clock",
+    title: "Speed",
+    description: "Timely responses and on-time deliveries.",
   },
-  Relationships: {
-    title: "Relaciones comerciales",
-    description:
-      "Construimos alianzas a largo plazo, no ventas de una sola vez.",
+  {
+    icon: "Users",
+    title: "Relationships",
+    description: "We build long-term partnerships, not one-time sales.",
   },
-  Compliance: {
-    title: "Cumplimiento",
-    description:
-      "Nuestra palabra es nuestro compromiso más importante.",
-  },
-};
-
+  {
+    icon: "ClipboardCheck",
+    title: "Compliance",
     description: "Our word is our most important commitment.",
   },
 ];
